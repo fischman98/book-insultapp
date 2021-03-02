@@ -2,8 +2,6 @@ DROP TABLE IF EXISTS short_adjective;
 DROP TABLE IF EXISTS long_adjective;
 DROP TABLE IF EXISTS noun;
 
-BEGIN;
-
 CREATE TABLE short_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE long_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE noun (id serial PRIMARY KEY, string varchar);
