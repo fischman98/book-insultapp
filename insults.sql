@@ -7,7 +7,9 @@ CREATE TABLE long_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE noun (id serial PRIMARY KEY, string varchar);
 
 INSERT INTO public.short_adjective (string) VALUES ('artless');
+commit;
 INSERT INTO public.short_adjective (string) VALUES ('bawdy');
+commit;
 INSERT INTO public.short_adjective (string) VALUES ('beslubbering');
 INSERT INTO public.short_adjective (string) VALUES ('bootless');
 INSERT INTO public.short_adjective (string) VALUES ('churlish');
