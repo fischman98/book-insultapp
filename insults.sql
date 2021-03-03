@@ -6,6 +6,8 @@ CREATE TABLE short_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE long_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE noun (id serial PRIMARY KEY, string varchar);
 
+set AUTOCOMMIT off;
+
 INSERT INTO public.short_adjective (string) VALUES ('artless');
 INSERT INTO public.short_adjective (string) VALUES ('bawdy');
 INSERT INTO public.short_adjective (string) VALUES ('beslubbering');
@@ -156,3 +158,5 @@ INSERT INTO public.noun (string) VALUES ('varlot');
 INSERT INTO public.noun (string) VALUES ('vassal');
 INSERT INTO public.noun (string) VALUES ('whey-face');
 INSERT INTO public.noun (string) VALUES ('wagtail');
+
+COMMIT;
