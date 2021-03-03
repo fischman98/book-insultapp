@@ -7,9 +7,7 @@ CREATE TABLE long_adjective (id serial PRIMARY KEY, string varchar);
 CREATE TABLE noun (id serial PRIMARY KEY, string varchar);
 
 INSERT INTO public.short_adjective (string) VALUES ('artless');
-commit;
 INSERT INTO public.short_adjective (string) VALUES ('bawdy');
-commit;
 INSERT INTO public.short_adjective (string) VALUES ('beslubbering');
 INSERT INTO public.short_adjective (string) VALUES ('bootless');
 INSERT INTO public.short_adjective (string) VALUES ('churlish');
@@ -58,7 +56,7 @@ INSERT INTO public.short_adjective (string) VALUES ('warped');
 INSERT INTO public.short_adjective (string) VALUES ('wayward');
 INSERT INTO public.short_adjective (string) VALUES ('weedy');
 INSERT INTO public.short_adjective (string) VALUES ('yeasty');
-
+COMMIT;
 INSERT INTO public.long_adjective (string) VALUES ('base-court');
 INSERT INTO public.long_adjective (string) VALUES ('bat-fowling');
 INSERT INTO public.long_adjective (string) VALUES ('beef-witted');
@@ -109,7 +107,7 @@ INSERT INTO public.long_adjective (string) VALUES ('tickle-brained');
 INSERT INTO public.long_adjective (string) VALUES ('toad-spotted');
 INSERT INTO public.long_adjective (string) VALUES ('unchin-snouted');
 INSERT INTO public.long_adjective (string) VALUES ('weather-bitten');
-
+COMMIT;
 INSERT INTO public.noun (string) VALUES ('apple-john');
 INSERT INTO public.noun (string) VALUES ('baggage');
 INSERT INTO public.noun (string) VALUES ('barnacle');
@@ -160,5 +158,4 @@ INSERT INTO public.noun (string) VALUES ('varlot');
 INSERT INTO public.noun (string) VALUES ('vassal');
 INSERT INTO public.noun (string) VALUES ('whey-face');
 INSERT INTO public.noun (string) VALUES ('wagtail');
-
 COMMIT;
